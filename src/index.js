@@ -1,15 +1,15 @@
 const array1 = [0, 1, 2, 3, 4];
 
-const newArray1 = array1.map((output, index) => {
-  return `${index}番目は${output}`;
+const newArray1 = array1.filter((output, index) => {
+  return output > 3;
 });
 
-//console.log(newArray1);
+console.log(newArray1);
 
-const array2 = ["tanaka", "suzuki", "nakata"];
+const array2 = ["tanaka", "suzuki", "takahashi", "nakanishi"];
 
-const newArray2 = array2.map((output, index) => {
-  return `${index}番目は${output}`;
+const newArray2 = array2.filter((output, index) => {
+  return output.length > 7;
 });
 
 console.log(newArray2);
